@@ -1,6 +1,6 @@
 # 🌿 SpaGrow — More Spa Bookings Without Paying for Ads
 
-[![CI/CD - Deploy to GitHub Pages](https://github.com/sahedalomsumit/spa-grow/actions/workflows/deploy.yml/badge.svg)](https://sahedalomsumit.github.io/spa-grow/)
+[![CI/CD - Deploy to GitHub Pages](https://github.com/sahedalomsumit/spa-grow/actions/workflows/deploy.yml/badge.svg)](https://spagrow.site/)
 
 SpaGrow is a conversion-focused landing page for **spa and wellness businesses worldwide**. Built with a "Sage & Stone" design system and scroll-triggered storytelling, it guides visitors from awareness to action — turning passive browsers into paying clients.
 
