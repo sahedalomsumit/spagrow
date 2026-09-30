@@ -102,7 +102,7 @@ The page follows a deliberate conversion flow:
 4. **Solution** — Shows what the redesign actually delivers (bookings, trust, mobile UX).
 5. **Process** — Transparent 7-step workflow removes fear of commitment.
 6. **Limited Offer** — 25% first-project discount creates urgency.
-7. **Free Redesign** — Zero-risk lead capture form with instant value.
+7. **Free 2-Minute Video Audit** — Zero-risk lead capture offering a quick video showing what makes it harder for visitors to book a treatment.
 8. **About** — Personal story and direct contact info (email + WhatsApp).
 9. **Final CTA** — Before/after comparison reinforces the transformation.
 
