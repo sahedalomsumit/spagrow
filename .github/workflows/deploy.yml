@@ -28,8 +28,15 @@ jobs:
         env:
           VITE_SHEETDB_URL: ${{ secrets.VITE_SHEETDB_URL }}
       - name: Deploy to Netlify
-        if: ${{ secrets.NETLIFY_AUTH_TOKEN != '' && secrets.NETLIFY_SITE_ID != '' }}
-        run: npx netlify-cli deploy --prod --dir=dist --site=${{ secrets.NETLIFY_SITE_ID }} --auth=${{ secrets.NETLIFY_AUTH_TOKEN }}
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+        run: |
+          if [ -n "$NETLIFY_AUTH_TOKEN" ] && [ -n "$NETLIFY_SITE_ID" ]; then
+            npx netlify-cli deploy --prod --dir=dist --site="$NETLIFY_SITE_ID" --auth="$NETLIFY_AUTH_TOKEN"
+          else
+            echo "Netlify credentials (NETLIFY_AUTH_TOKEN / NETLIFY_SITE_ID) not configured yet. Skipping Netlify deployment."
+          fi
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
